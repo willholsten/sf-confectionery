@@ -1,0 +1,210 @@
+
+@media screen and (max-width: 321px) {
+
+
+
+#logo {
+  display: none;
+}
+#brand {
+  margin-left: 20px;
+  font-size: 1.3em;
+}
+
+}
+
+@media screen and (min-width: 680px) {
+
+
+    /**********************
+    PAGE: PORTFOLIO
+    **********************/
+
+  #products li {
+    width: 28.3333%;
+    margin: 2.5%;
+  }
+
+   #products li:nth-child(3n+1) {
+      clear: left;
+  }
+
+  #products-brandpage li {
+    width: 20%;
+    padding: 20px 10px;
+  }
+
+
+
+
+  /***********************************
+  HOVER
+  ***********************************/
+
+  .brands img:hover {
+    opacity: .5
+  }
+
+  #products li:hover {
+    border: 1px solid rgba(0,0,0, .2);
+
+  }
+
+  #products-brandpage li:hover {
+    border: 1px solid rgba(0,0,0, .2);
+  }
+
+  .inline-menu li:hover {
+    background-color: rgba(250,250,250, .3);
+    border-radius: 10px;
+  }
+
+  footer li:hover {
+    border-bottom: 1px solid #135176;
+  }
+
+/***********************************
+SELECTED
+***********************************/
+
+
+  nav a.selected {
+    border-bottom: 1px solid rgba(250,250,250, .5);
+  }
+}
+
+@media screen and (min-width: 780px) {
+
+
+  /**********************
+  PAGE: HEADER
+  **********************/
+
+header h1 {
+  float: left;
+  display: inline-block;
+}
+
+nav {
+  background: none;
+  float: right;
+  font-size: 1.2em;
+  text-align: right;
+  width: 60%;
+}
+
+nav ul {
+  margin: 35px 0px;
+}
+
+nav   li {
+  letter-spacing: 2px;
+  font: 400 .8em/1 'Open Sans', sans-serif;
+  padding: 0px 10px;
+}
+
+nav a {
+  padding: 5px 5px;
+}
+
+
+.inline-menu {
+  display: none;
+}
+
+.background h1 {
+  display: block;
+  font: 300 2em/1.5 'EB Garamond', sans-serif;
+  color: #135176;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.background h2 {
+  font: 300 1.3em/1.5 'EB Garamond', sans-serif;
+  top: 200px;
+}
+
+.menu-btn {
+  display: block;
+}
+
+
+/**********************
+PAGE: FOOTER
+**********************/
+
+.push {
+  height: 170px;
+}
+
+footer {
+  padding-top: 5px;
+  }
+
+footer li {
+  display: inline-block;
+  border: none;
+  margin: 0px 10px;
+  }
+
+footer li:hover {
+  border-bottom: 1px solid #135176;
+  background-color: inherit;
+  }
+
+
+
+  /**********************
+  PAGE: HOMEPAGE
+  **********************/
+
+  #home-text h5 {
+    display: block;
+    text-align: center;;
+    margin: 0 auto;
+    width: 100%;
+    font: 400 2.5em/2 'Open Sans', serif;color:#135176;
+  }
+
+  #home-text p {
+    font: 100 2em/1 'Open Sans', serif;color:#135176;
+  }
+
+  .brands {
+      padding: 75px 0;
+    }
+
+.brands li {
+    display: inline;
+    margin: 0 30px;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+  .inline-menu {
+    display: inline-block;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  #small {
+    display: none;
+  }
+
+
+  #full {
+    display: inline-block;
+  }
+}

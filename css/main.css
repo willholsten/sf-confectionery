@@ -1,0 +1,607 @@
+/***********************************
+GENERAL
+***********************************/
+* {
+  box-sizing: border-box;
+  margin: 0, padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration:none;
+  color: #135176;
+}
+
+
+
+/***********************************
+HEADING
+***********************************/
+#logo {
+  display: inline-block;
+  float: left;
+  margin: 12px 0 5px 0;
+  width: 60px;
+}
+
+.main-header {
+  display: flex;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background: #137EC0;
+  border-bottom: 3px solid hotpink;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header h1 {
+  font: 400 1.5em/1 'EB Garamond', serif;
+  padding: 20px 0;
+  letter-spacing: 1.2px;
+  margin: 15px 0;
+}
+
+#brand {
+  display: inline-block;;
+  color: #fff;
+}
+
+
+
+/***********************************
+NAVIGATION
+***********************************/
+.menu-btn {
+  cursor: pointer;
+  padding: 20px;
+}
+
+.menu-btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 4px 0;
+  background: rgba(255,255,255, .8);
+}
+
+.responsive-menu {
+  display: none;
+  position: absolute;
+  font: 300 .9em/1 'Open Sans', sans-serif;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+}
+
+.responsive-menu ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.responsive-menu li {
+  padding: 20px;
+  color: #333;
+  letter-spacing: 1.2px;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+  list-style-type: none;
+}
+
+.inline-menu {
+  display: none;
+}
+
+.inline-menu ul {
+  margin-right: 20px;
+}
+
+.inline-menu li {
+  display: inline;
+  font: 100 .9em 'Open Sans', serif;
+  padding: 20px;
+  letter-spacing: 1.2px;
+  margin: 0;
+  color: #fff;
+}
+
+
+
+/***********************************
+BODY
+***********************************/
+#wrapper {
+  width: 940px;
+  max-width: 100%;
+  height: auto !important;
+  min-height: 100%;
+  margin: 0 auto -170px;
+  padding: 110px 0px 0px 0px;
+}
+
+
+
+/***********************************
+PAGE: HOMEPAGE
+***********************************/
+.background {
+  width: 100%;
+  padding-top: 100px;
+  margin: 0;
+}
+
+.index-homepage {
+  background: url(../img/homepage-copy.jpg) center no-repeat;
+  width: 100%;
+  height: calc(100vh - 100px);
+  max-width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.background h1 {
+  display: none;
+}
+
+.background h2 {
+  font: 300 1.3em/1.5 'EB Garamond', sans-serif;
+  letter-spacing: 1.2px;
+  color: #666;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.brands {
+  max-width: 100%;
+  list-style-type: none;
+  text-align: center;color: #135176;
+  font: 300 2em/1.5 'EB Garamond', serif;
+  padding: 25px 0;
+  margin: 0 auto;
+  background-color: #d4dfe6;
+}
+
+.brands ul {
+  padding: 0;
+}
+
+.brands li {
+  width: 100%;
+  max-width: 100%;
+  list-style-type: none;
+}
+
+.brands img {
+  width: 150px;
+  max-width: 100%;
+  padding: 20px 0;
+}
+
+
+/*****************************************************************************
+INFO TEXT / ABOUT, PRODUCTS, PRIVATE LABEL, CONTACT, TERMS, LOGISTICS
+*****************************************************************************/
+
+.top-text {
+  max-width: 100%;
+  margin: 40px 10px 25px 10px;
+  padding: 0;
+  text-align: left;color:#4A4A4A;
+
+  font: 300 1.5em/1 'Open Sans', serif;
+}
+
+#second-text {
+  max-width: 100%;
+  margin: 20px 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: left;
+  text-align: left;color:#4A4A4A;
+  font: 200 .9em/1.7 'Open Sans', serif;
+}
+
+#second-text a {
+ font-weight: bolder;
+}
+
+#second-text p {
+  margin: 20px 0;
+  padding: 0;
+}
+
+#second-text:last-child {
+  margin-bottom: 50px;
+}
+
+#second-text li {
+  list-style: circle;
+  font-weight: bolder;
+}
+
+#second-text h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+/***********************************
+PAGE: PRODUCTS
+***********************************/
+
+
+#products {
+  display flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+}
+
+ul#products {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#products li {
+  display: flex;
+  width: 45%;
+  margin: 10px;
+  padding-top: 10px;
+
+  text-align: center;
+
+  border: 1px solid rgba(0,0,0, .1);
+}
+
+.company-logo {
+  clear:both;
+
+  width: 50%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+
+/***********************************
+PAGE: BRAND PAGE
+***********************************/
+
+.company-page {
+  width: 200px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+#products-brandpage {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+#products-brandpage li {
+  float:left;
+  width: 45%;
+  margin: 2.5%;
+  text-align: center;color:#333333;
+  font: bold 1em/1 'Open Sans', serif;
+  border: 1px solid rgba(0,0,0, .1);
+  padding: 5px;
+  cursor: pointer;
+}
+
+#products-brandpage h6 {
+  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;color:#135176;
+  font: 400 .9em/1.3 'Open Sans', serif;
+}
+
+#products-brandpage p {
+  margin: 10px;
+
+  text-align: left;color:#333333;
+
+  font: 200 .8em/1.2 'Open Sans', serif;
+}
+
+.menu ul {
+  display: block;
+  margin: 20px 0px 0 10px;
+  padding: 0;
+  text-align: left;
+}
+
+.menu li {
+  display: inline;color:#135176;
+  font: 400 .8em/1 'Open Sans', serif;
+}
+
+.menu li + li:before{
+  padding: 0 10px;
+
+  content: " > ";
+
+  color: #135176;
+}
+
+.menu li:first-child:before {
+  content: none;
+}
+
+
+/***********************************
+PAGE: SINGLE ITEM
+***********************************/
+
+
+div.menu-product ul {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 10px;
+
+  text-align: left;
+}
+
+div.menu-product li {
+  display: inline-block;
+  color:#135176;
+  margin: 0;
+  font: 400 .8em/1 'Open Sans', serif;
+}
+
+div.menu-product li + li:before{
+  padding: 0 10px;
+
+  content: " > ";
+
+  color: #135176;
+}
+
+div.menu-product li:first-child:before {
+  content: none;
+}
+
+.product-text-top h1 {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin: 15px auto;
+  margin-top: 40px;
+  padding-left: 10px;
+
+  text-align: left;color:#333;
+
+  font: 400 1em/1 'Open Sans', serif;
+}
+
+.product-text-top h5 {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin: 10px auto;
+  padding-left: 10px;
+
+  text-align: left;color:#135176;
+
+  font: 400 1.5em/1 'Open Sans', serif;
+}
+
+.product-text-top p {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin: 15px auto;
+  padding-left: 10px;
+
+  text-align: left;color:#333333;
+
+  font: 400 1em/.9 'Open Sans', serif;
+}
+
+.product-photo img {
+  display: block;
+
+  width: 50%;
+  max-width: 100%;
+  margin: 15px auto;
+  padding: 0;
+}
+
+/* Image Border */
+.container {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin:0 auto;color:#333333;color:#333333;
+  border-top: 1px solid rgba(0,0,0, .2);
+  border-bottom: 1px solid rgba(0,0,0, .2);
+}
+
+.product-text-bottom {
+  margin-bottom: 60px;
+}
+
+.product-text-bottom h5 {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin: 5px auto;
+  padding-left: 10px;
+
+  text-align: left;color:#135176;
+
+  font: normal 400 .9em/2 'Open Sans', serif;
+}
+
+.product-text-bottom p {
+  display: block;
+
+  width: 500px;
+  max-width: 100%;
+  margin: 2px auto;
+  padding-left: 10px;
+
+  text-align: left;color:#333333;
+
+  font: 200 .8em/1.5 'Open Sans', serif;
+}
+
+.product-text-bottom p b {color:#135176;
+
+  font: 400 1em/1.5 'Open Sans', serif;
+}
+
+.product-text-bottom span {
+  display:block;
+
+  margin-top: 20px;
+}
+
+
+
+/***********************************
+PAGE: PRIVATE LABEL
+***********************************/
+
+.private-label {
+  display: block;
+
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+
+
+/***********************************
+PAGE: CONTACT
+***********************************/
+
+
+#primary {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;color:#4A4A4A;
+
+  font: 100 .9em/1 'Open Sans', serif;
+}
+
+
+#primary span {
+  display: block;
+
+  margin-left: 35px;color:#4A4A4A;
+
+  font: 100 .9em/1 'Open Sans', serif;
+}
+
+#primary img {
+  display: inline-block;
+
+  width: 20px;
+  margin: 5px 10px -5px 0;
+}
+
+
+
+/***********************************
+FOOTER
+***********************************/
+
+.push {
+  height: 170px;
+  text-align: center;
+}
+
+.footer {
+  clear: both;
+
+  width: 100%;
+  height: 170px;
+
+  background-color: #f8f8f8;
+  box-shadow: 0 -1px 1px rgba(0,0,0, .2);
+}
+
+footer ul {
+  margin: 0 auto;
+  padding: 0;
+
+  text-align: center;
+}
+
+footer li {
+  padding: 10px 0;
+  margin: 0;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(0,0,0, .2);
+
+  font: 400 .9em/1 'Open Sans', sans-serif;
+}
+
+footer img {
+  width: 15px;
+  margin: 0px 5px -3px 5px;
+}
+
+.contact-info {
+  display: inline;
+
+  text-align: center;color:#4A4A4A;
+  background-color: #f8f8f8;
+
+  font: 200 .8em/1 'Open Sans', sans-serif;
+}
+
+.contact-info h4 {color:#4A4A4A;
+
+  font: 200 1em/1 'Open Sans', sans-serif;
+}
+
+.copyright {
+  padding: 4px;
+
+  text-align: center;color:#fff;
+  background-color: #135176;
+
+  font: 300 .7em/1 'Open Sans', sans-serif;
+}
