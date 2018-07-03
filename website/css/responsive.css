@@ -1,0 +1,171 @@
+@media screen and (max-width: 321px) {
+  #logo {
+    display: none;
+  }
+  #brand {
+    margin-left: 20px;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .desktop-hide {
+    display: none;
+  }
+  .mobile-hide {
+    display: block;
+  }
+  .header {
+    justify-content: flex-start;
+    position: relative;
+    background: none;
+    border: none;
+  }
+  header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #137EC0;
+    border-bottom: 2px solid #F279AF;
+    padding: 0 20px;
+  }
+  .navigation {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: unset;
+    z-index: 999;
+    background: none;
+    justify-content: flex-end;
+  }
+  .navigation a {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-size: 14px;
+  }
+  /**********************
+    PAGE: PRODUCTS
+    **********************/
+  #products-brandpage {
+    padding-bottom: 200px;
+  }
+  ul#products {
+    padding-bottom: 200px;
+  }
+  #products li {
+    width: 28.3333%;
+    margin: 2.5%;
+  }
+  #products li:nth-child(3n+1) {
+    clear: left;
+  }
+  #products-brandpage li {
+    width: 20%;
+    padding: 20px 10px;
+  }
+  /***********************************
+SELECTED
+***********************************/
+  nav a.selected {
+    border-bottom: 1px solid rgba(250, 250, 250, .5);
+  }
+}
+
+@media screen and (min-width: 780px) {
+  /**********************
+  PAGE: HEADER
+  **********************/
+  header h1 {
+    float: left;
+  }
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.2em;
+    text-align: right;
+    width: 60%;
+  }
+  nav ul {
+    margin: 35px 0px;
+  }
+  nav li {
+    letter-spacing: 2px;
+    font: 400 .8em/1 'Open Sans', sans-serif;
+    padding: 0px 10px;
+  }
+  nav a {
+    padding: 5px 5px;
+  }
+  .inline-menu {
+    display: none;
+  }
+  .background h1 {
+    display: block;
+    font: 300 2em/1.5 'EB Garamond', sans-serif;
+    color: #135176;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
+  .background h2 {
+    font: 300 1.3em/1.5 'EB Garamond', sans-serif;
+    top: 200px;
+  }
+  .menu-btn {
+    display: block;
+  }
+  /**********************
+PAGE: FOOTER
+**********************/
+  .footer-links {
+    padding-top: 30px;
+  }
+  footer p {
+    padding-bottom: 25px;
+  }
+  /**********************
+  PAGE: HOMEPAGE
+  **********************/
+  #home-text h5 {
+    display: block;
+    text-align: center;
+    ;
+    margin: 0 auto;
+    width: 100%;
+    font: 400 2.5em/2 'Open Sans', serif;
+    color: #135176;
+  }
+  #home-text p {
+    font: 100 2em/1 'Open Sans', serif;
+    color: #135176;
+  }
+  .brands {
+    padding: 75px 0 150px;
+  }
+  .brands li {
+    display: inline;
+    margin: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .inline-menu {
+    display: inline-block;
+  }
+  .menu-btn {
+    display: none;
+  }
+  #small {
+    display: none;
+  }
+  #full {
+    display: inline-block;
+  }
+}
