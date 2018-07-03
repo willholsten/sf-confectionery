@@ -1,6 +1,3 @@
-# sf_confectionery
-S&amp;F Confectionery | Importers &amp; Distributors of Mint Confectionery
+# S&F Confectionery
 
-This is the hosted version of the first website I have created. 
-
-I will aim to add to it as I keep learning new skills.
+This is a website for the subsidiary of Spencer & Fleetwood to showcase their mint range to retailers.
