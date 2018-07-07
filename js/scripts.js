@@ -1,9 +1,12 @@
-jQuery(function($){
-    $( '.menu-btn' ).click(function(){
-    $(".responsive-menu").slideToggle();
- })
 
- $( '.response' ).click(function(){
- $(".responsive-menu").slideToggle();
-  })
-})
+
+
+$(function(){
+  $(".hamburger").click(function(){
+    $(".navigation").toggleClass('navigation-flex');
+    $(".burger").toggle();
+    $(".close").toggle();
+    $("body").css("overflow","hidden");
+    
+  });
+});
